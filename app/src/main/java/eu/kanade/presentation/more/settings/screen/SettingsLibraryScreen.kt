@@ -196,6 +196,11 @@ object SettingsLibraryScreen : SearchableSettings {
                     title = stringResource(MR.strings.pref_library_update_refresh_metadata),
                     subtitle = stringResource(MR.strings.pref_library_update_refresh_metadata_summary),
                 ),
+                Preference.PreferenceItem.SwitchPreference(
+                    pref = libraryPreferences.autoResetAllChapters(),
+                    title = stringResource(MR.strings.pref_library_reset_all_chapters),
+                    subtitle = stringResource(MR.strings.pref_library_reset_all_chapters_summary),
+                ),
                 Preference.PreferenceItem.MultiSelectListPreference(
                     pref = libraryPreferences.autoUpdateMangaRestrictions(),
                     title = stringResource(MR.strings.pref_library_update_smart_update),

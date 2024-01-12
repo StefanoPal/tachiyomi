@@ -172,6 +172,8 @@ class LibraryPreferences(
 
     fun autoClearChapterCache() = preferenceStore.getBoolean("auto_clear_chapter_cache", false)
 
+    fun autoResetAllChapters() = preferenceStore.getBoolean("auto_reset_all_chapters", false)
+
     // endregion
 
     // region Swipe Actions
